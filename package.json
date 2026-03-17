@@ -1,0 +1,16 @@
+{
+  "name": "kambaz-node-server-app",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the Kambaz application",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Haoyuan Deng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
