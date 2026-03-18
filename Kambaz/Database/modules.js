@@ -1,0 +1,8 @@
+export default [
+  { "_id": "M101", "name": "Introduction to Rocket Propulsion", "description": "Basic principles of rocket propulsion", "course": "CS1234", "lessons": [{ "_id": "L101", "name": "Lesson 1", "description": "Introduction", "module": "M101" }] },
+  { "_id": "M102", "name": "Fuel and Combustion", "description": "Understanding rocket fuel", "course": "CS1234", "lessons": [] },
+  { "_id": "M103", "name": "Nozzle Design", "description": "Nozzle design principles", "course": "CS1234", "lessons": [] },
+  { "_id": "M201", "name": "Machine Learning Basics", "description": "Introduction to ML", "course": "FINA4390", "lessons": [] },
+  { "_id": "M202", "name": "Supervised Learning", "description": "Classification and regression", "course": "FINA4390", "lessons": [] },
+  { "_id": "M301", "name": "Data Science Fundamentals", "description": "Core DS concepts", "course": "DS4400", "lessons": [] }
+];
