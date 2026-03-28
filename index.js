@@ -24,18 +24,13 @@ const sessionOptions = {
   saveUninitialized: true,
   cookie: {
     httpOnly: true,
-    secure: false,
-    sameSite: "lax",
     maxAge: 1000 * 60 * 60 * 24,
   },
 };
-if (process.env.SERVER_ENV !== "development") {
+if (process.env.SERVER_ENV === "production") {
   sessionOptions.proxy = true;
-  sessionOptions.cookie = {
-    sameSite: "none",
-    secure: true,
-    domain: process.env.SERVER_URL,
-  };
+  sessionOptions.cookie.sameSite = "none";
+  sessionOptions.cookie.secure = true;
 }
 app.use(session(sessionOptions));
 app.use(express.json());
