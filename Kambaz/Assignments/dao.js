@@ -1,5 +1,5 @@
 import model from "./model.js";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuids4 } from "uuid";
 export default function AssignmentsDao() {
   const findAssignmentsForCourse = (courseId) => model.find({ course: courseId });
   const findAssignmentById = (assignmentId) => model.findById(assignmentId);
