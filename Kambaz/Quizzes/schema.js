@@ -13,7 +13,7 @@ const questionSchema = new mongoose.Schema({
   points: { type: Number, default: 1 },
   question: String,
   answers: [answerSchema],
-  correctAnswer: String, // For TRUE_FALSE: "true" or "false", For FILL_BLANK: comma-separated correct answers
+  correctAnswer: String,
 });
 
 const quizSchema = new mongoose.Schema({
@@ -25,6 +25,7 @@ const quizSchema = new mongoose.Schema({
   points: { type: Number, default: 0 },
   assignmentGroup: { type: String, enum: ["Quizzes", "Exams", "Assignments", "Project"], default: "Quizzes" },
   shuffleAnswers: { type: Boolean, default: true },
+  hasTimeLimit: { type: Boolean, default: true },
   timeLimit: { type: Number, default: 20 },
   multipleAttempts: { type: Boolean, default: false },
   howManyAttempts: { type: Number, default: 1 },
